@@ -1,0 +1,11 @@
+<p>
+  movie-search works!
+</p>
+
+<form (ngSubmit)="submitForm(myForm)" #myForm="ngForm">
+  <p> Username
+    <input type="text" name="username" [(ngModel)]="username" minlength="6" />
+  </p>
+
+  <button type="submit"> Find Movie </button>
+</form>

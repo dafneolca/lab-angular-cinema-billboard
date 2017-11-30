@@ -1,0 +1,15 @@
+<p>
+  movie-list works!
+</p>
+
+
+<app-movie-search></app-movie-search>
+
+
+<div>
+  <ul>
+    <li *ngFor="let movie of movies">
+      {{movie | json}}
+      <img src="{{movie.poster}}"> </li>
+  </ul>
+</div>
